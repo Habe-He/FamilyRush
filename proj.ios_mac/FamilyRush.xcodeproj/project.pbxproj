@@ -59,6 +59,8 @@
 		521A8EA919F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		521A8EAA19F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B47A461A53D09B004E4C60 /* Security.framework */; };
+		7834F1BE1CBBED8D00723AB6 /* RoleSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7834F1BC1CBBED8D00723AB6 /* RoleSprite.cpp */; };
+		7834F1C41CBBF25E00723AB6 /* Role.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7834F1C21CBBF25E00723AB6 /* Role.cpp */; };
 		8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262943D1AAF051F00CB7CF7 /* Security.framework */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -153,6 +155,11 @@
 		521A8E6319F0C34300D177D7 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
 		521A8EA819F11F5000D177D7 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		52B47A461A53D09B004E4C60 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		7834F1BC1CBBED8D00723AB6 /* RoleSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RoleSprite.cpp; path = RoleParent/RoleSprite.cpp; sourceTree = "<group>"; };
+		7834F1BD1CBBED8D00723AB6 /* RoleSprite.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = RoleSprite.hpp; path = RoleParent/RoleSprite.hpp; sourceTree = "<group>"; };
+		7834F1C21CBBF25E00723AB6 /* Role.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Role.cpp; path = Role/Role.cpp; sourceTree = "<group>"; };
+		7834F1C31CBBF25E00723AB6 /* Role.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Role.hpp; path = Role/Role.hpp; sourceTree = "<group>"; };
+		7834F1C51CBBF45B00723AB6 /* RoleInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RoleInfo.h; path = Role/RoleInfo.h; sourceTree = "<group>"; };
 		8262943D1AAF051F00CB7CF7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -297,6 +304,8 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7834F1BF1CBBF21D00723AB6 /* Role */,
+				7834F1BB1CBBED6E00723AB6 /* RoleParent */,
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
 				46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */,
@@ -352,6 +361,25 @@
 			name = Icons;
 			path = ios;
 			sourceTree = SOURCE_ROOT;
+		};
+		7834F1BB1CBBED6E00723AB6 /* RoleParent */ = {
+			isa = PBXGroup;
+			children = (
+				7834F1BC1CBBED8D00723AB6 /* RoleSprite.cpp */,
+				7834F1BD1CBBED8D00723AB6 /* RoleSprite.hpp */,
+			);
+			name = RoleParent;
+			sourceTree = "<group>";
+		};
+		7834F1BF1CBBF21D00723AB6 /* Role */ = {
+			isa = PBXGroup;
+			children = (
+				7834F1C21CBBF25E00723AB6 /* Role.cpp */,
+				7834F1C31CBBF25E00723AB6 /* Role.hpp */,
+				7834F1C51CBBF45B00723AB6 /* RoleInfo.h */,
+			);
+			name = Role;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -497,7 +525,9 @@
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				7834F1BE1CBBED8D00723AB6 /* RoleSprite.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				7834F1C41CBBF25E00723AB6 /* Role.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
