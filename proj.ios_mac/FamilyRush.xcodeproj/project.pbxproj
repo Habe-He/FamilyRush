@@ -61,6 +61,9 @@
 		52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B47A461A53D09B004E4C60 /* Security.framework */; };
 		7834F1BE1CBBED8D00723AB6 /* RoleSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7834F1BC1CBBED8D00723AB6 /* RoleSprite.cpp */; };
 		7834F1C41CBBF25E00723AB6 /* Role.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7834F1C21CBBF25E00723AB6 /* Role.cpp */; };
+		7899FDEC1CBD386300E209AF /* DataManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7899FDEA1CBD386300E209AF /* DataManager.cpp */; };
+		7899FDF11CBD3EC100E209AF /* Net.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7899FDEF1CBD3EC100E209AF /* Net.cpp */; };
+		7899FDF61CBD42E200E209AF /* Sister.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7899FDF41CBD42E200E209AF /* Sister.cpp */; };
 		8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262943D1AAF051F00CB7CF7 /* Security.framework */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -160,6 +163,12 @@
 		7834F1C21CBBF25E00723AB6 /* Role.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Role.cpp; path = Role/Role.cpp; sourceTree = "<group>"; };
 		7834F1C31CBBF25E00723AB6 /* Role.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Role.hpp; path = Role/Role.hpp; sourceTree = "<group>"; };
 		7834F1C51CBBF45B00723AB6 /* RoleInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RoleInfo.h; path = Role/RoleInfo.h; sourceTree = "<group>"; };
+		7899FDEA1CBD386300E209AF /* DataManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataManager.cpp; path = DataManager/DataManager.cpp; sourceTree = "<group>"; };
+		7899FDEB1CBD386300E209AF /* DataManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DataManager.hpp; path = DataManager/DataManager.hpp; sourceTree = "<group>"; };
+		7899FDEF1CBD3EC100E209AF /* Net.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Net.cpp; path = Net/Net.cpp; sourceTree = "<group>"; };
+		7899FDF01CBD3EC100E209AF /* Net.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Net.hpp; path = Net/Net.hpp; sourceTree = "<group>"; };
+		7899FDF41CBD42E200E209AF /* Sister.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Sister.cpp; path = SelfRole/Sister.cpp; sourceTree = "<group>"; };
+		7899FDF51CBD42E200E209AF /* Sister.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Sister.hpp; path = SelfRole/Sister.hpp; sourceTree = "<group>"; };
 		8262943D1AAF051F00CB7CF7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -304,6 +313,10 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7899FDF31CBD41EB00E209AF /* OtherRole */,
+				7899FDF21CBD40C800E209AF /* SelfRole */,
+				7899FDEE1CBD3E9B00E209AF /* Net */,
+				7899FDE91CBD383100E209AF /* DataManager */,
 				7834F1BF1CBBF21D00723AB6 /* Role */,
 				7834F1BB1CBBED6E00723AB6 /* RoleParent */,
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
@@ -379,6 +392,40 @@
 				7834F1C51CBBF45B00723AB6 /* RoleInfo.h */,
 			);
 			name = Role;
+			sourceTree = "<group>";
+		};
+		7899FDE91CBD383100E209AF /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				7899FDEA1CBD386300E209AF /* DataManager.cpp */,
+				7899FDEB1CBD386300E209AF /* DataManager.hpp */,
+			);
+			name = DataManager;
+			sourceTree = "<group>";
+		};
+		7899FDEE1CBD3E9B00E209AF /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				7899FDEF1CBD3EC100E209AF /* Net.cpp */,
+				7899FDF01CBD3EC100E209AF /* Net.hpp */,
+			);
+			name = Net;
+			sourceTree = "<group>";
+		};
+		7899FDF21CBD40C800E209AF /* SelfRole */ = {
+			isa = PBXGroup;
+			children = (
+				7899FDF41CBD42E200E209AF /* Sister.cpp */,
+				7899FDF51CBD42E200E209AF /* Sister.hpp */,
+			);
+			name = SelfRole;
+			sourceTree = "<group>";
+		};
+		7899FDF31CBD41EB00E209AF /* OtherRole */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = OtherRole;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -527,6 +574,9 @@
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				7834F1BE1CBBED8D00723AB6 /* RoleSprite.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				7899FDEC1CBD386300E209AF /* DataManager.cpp in Sources */,
+				7899FDF11CBD3EC100E209AF /* Net.cpp in Sources */,
+				7899FDF61CBD42E200E209AF /* Sister.cpp in Sources */,
 				7834F1C41CBBF25E00723AB6 /* Role.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 			);
@@ -579,6 +629,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../cocos2d/cocos/platform/ios",
 					"$(SRCROOT)/../cocos2d/cocos/platform/ios/Simulation",
+					"/Users/ouyangwang/Documents/cocos/cocos2d-x-3.8/projects/FamilyRush/Classes",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
@@ -613,6 +664,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../cocos2d/cocos/platform/ios",
 					"$(SRCROOT)/../cocos2d/cocos/platform/ios/Simulation",
+					"/Users/ouyangwang/Documents/cocos/cocos2d-x-3.8/projects/FamilyRush/Classes",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;

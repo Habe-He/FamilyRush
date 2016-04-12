@@ -6,6 +6,11 @@
 //
 //
 
+/*
+    this class need to repaired at last
+    get more suit function instand it
+ */
+
 #ifndef Role_hpp
 #define Role_hpp
 
@@ -25,9 +30,13 @@ public:
     
     Role* createRole(RoleType _roleType);
     
+    
+    
     void initAnimation();
     
 public:
+    virtual bool initRoleInfo() = 0;
+    
     virtual void getRoleState();
     virtual void roleHurt(float& _damage);
     virtual float getRoleHP();

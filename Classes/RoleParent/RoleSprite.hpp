@@ -15,7 +15,7 @@
 
 using namespace cocos2d;
 
-class RoleSprite
+class RoleSprite : public Node
 {
 public:
     RoleSprite();
